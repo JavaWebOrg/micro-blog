@@ -1,0 +1,80 @@
+
+* {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.v_out {
+    margin: 20px auto;
+    overflow: hidden;
+    width: 720px;
+    height: 100%;
+}
+.v_show {
+    margin-top:-3px;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 440px;
+}
+.v_cont { 
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 2200px;
+}
+.v_cont ul {
+    float: left;
+    width: 100%;
+    /*line-height: 50px;*/
+    /*text-align: center;*/
+}
+.v_cont ul li {
+    background: none repeat scroll 0 0 #f8f8f8;
+    float: left;
+    height: 250px;
+    margin-top: 3px;
+    width: 440px;
+}
+.v_out_p {
+    overflow: visible;
+    position: relative;
+}
+.circle {
+    left: 40px;
+    position: absolute;
+    top: 92%;
+}
+.circle li {
+    background: none repeat scroll 0 0 #ccc;/*#ccc 平常状况下显示的背景色*/
+    float: left;
+    height: 20px;
+    margin-right: 10px;
+    width: 10px;
+}
+.circle .circle-cur {
+    background: none repeat scroll 0 0 #f00;/*点到图片下的数字时显示的数字*/
+    /*#f00*/
+}
+.prev, .next {
+    float: left;
+    padding: 105px 9px 0;
+}
+.prev a {
+    background: none repeat scroll 0 0 #f00;
+}
+.prev .ico_1 {
+    background: url("input_a.gif") no-repeat scroll 0 -3757px rgba(0, 0, 0, 0);
+}
+.next a {
+    background: none repeat scroll 0 0 #f00;
+}
+.next .ico_2 {
+    background: url("input_a.gif") no-repeat scroll right -3757px rgba(0, 0, 0, 0);
+}
+.prev, .prev a, .next, .next a {
+    display: block;
+    height: 20px;
+    width: 21px;
+}
