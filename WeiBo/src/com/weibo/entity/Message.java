@@ -1,10 +1,8 @@
 package com.weibo.entity;
 
-import java.util.Date;
-
 public class Message {
 	private int lid;
-	private Date ldate;
+	private String ldate;
 	private String lcontext;
 	private int uid;
 	public int getLid() {
@@ -13,10 +11,10 @@ public class Message {
 	public void setLid(int lid) {
 		this.lid = lid;
 	}
-	public Date getLdate() {
+	public String getLdate() {
 		return ldate;
 	}
-	public void setLdate(Date ldate) {
+	public void setLdate(String ldate) {
 		this.ldate = ldate;
 	}
 	public String getLcontext() {
