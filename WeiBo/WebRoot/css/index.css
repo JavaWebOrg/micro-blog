@@ -29,7 +29,7 @@
 		.uright input{
 			background:transparent;
 			border:0px solid #ffffff;
-			height: 16px;
+			height: 20px;
 			width: 150px;
 			margin: 0px;
 			padding: 0px;
@@ -74,14 +74,16 @@
 				padding-right: 20px;
 			}
 		.nav{
-			background-color:#272727;
+			
 			height:5%;
+			width:720px;
+			
 		}
 
 		.main{
-			background-color:red;
 			width: 100%;
 			height: 76%;
+			
 			background-image:url("../images/mainbackground.jpg");
 			background-repeat:no-repeat;
 			
@@ -124,6 +126,10 @@
 				height: 30px;
 				border: 1px solid #ccc;
 			}
+			.input input:hover{
+				cursor: pointer;
+			}
+	
 
 
 		.middle{

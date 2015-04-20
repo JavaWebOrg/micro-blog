@@ -13,7 +13,6 @@
 	<script type="text/javascript" src="js/jqueryme.js"></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-
   </head>
   <body >
 	  <div class="container" align="center">
@@ -25,16 +24,16 @@
 	  			</div>
 	  			
 	  		</div>
-	  		<div class="nav" >
+	  		<div class="nav" style="border-top-width: 1px;margin-bottom: -18px" >
 		  		<div class="clear"></div>
-		  		<div class="navall">
-		  			<ul class="navul"> 
-						<li class="navli"><a class="nava" href="#">首页</a></li> 
-						<li class="navli"><a class="nava" href="#">我的微博</a></li> 
-						<li class="navli"><a class="nava" href="#">个人中心</a></li> 
-						<li class="navli"><a class="nava" href="#">最新动态</a></li> 
-						<li class="navli"><a class="nava" href="#">留言板</a></li> 
-						<li class="navli"><a class="nava" href="#">帮助中心</a></li> 
+		  		<div class="navall"  >
+		  			<ul id="ul"> 
+						<li  id="li"><a id="a"  href="index.html">首页</a></li> 
+						<li  id="li"><a id="a"  href="#">我的微博</a></li> 
+						<li  id="li"><a id="a"  href="#">个人中心</a></li> 
+						<li  id="li"><a id="a"  href="#">最新动态</a></li> 
+						<li  id="li"><a id="a"  href="#">留言板</a></li> 
+						<li  id="li"><a id="a"  href="#">帮助中心</a></li> 
 					</ul>
 				</div>
 	  		</div>
@@ -66,12 +65,20 @@
 
 	<div style="float:right;width:280px;height:100%;">
 		
-			<form action="#" method="post">
+			<form action="index.html" method="post">
 
 				<div class="uright">
-					<div height="3px"><font color="#4B515D" size="3px"> </font><input type="text" name="userName" /></div>
-					<div height="3px" style="padding-top:29px;"><font color="#4B515D" size="3px"> </font><input type="password" name="pwd" /></div>
-					<div class="input" style="padding-top:15px;"><input type="submit" name="submit" value="登陆"  /> <input type="button" name="register" value="注册" /></div>
+					<div ><font color="#4B515D" size="3px"> </font><input type="text" name="userName" /></div>
+					<div style="padding-top:29px;"><font color="#4B515D" size="3px"> </font><input type="password" name="pwd" /></div>
+					<div class="input" style="padding-top:15px;"><input type="submit" name="submit" value="登陆"  /> 
+						 <input type="button" name="register" value="注册" onclick="window.open('register.jsp')"/>
+						<!--  <input type=button onclick="window.open('连接')"> -->
+						<!-- <button type="button" style="background:transparent;border:0px solid #ffffff;
+			height: 30px;
+			width: 50px;
+			margin: 0px;
+			padding: 0px;" ><a href="register.jsp">注册</a></button>-->
+						</div> 
 				</div>
 
 			</form>
