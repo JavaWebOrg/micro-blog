@@ -1,10 +1,9 @@
 package com.weibo.entity;
 
-import java.sql.Date;
 
 public class DynamicInformation {
 	private int did;
-	private Date ddate;
+	private String ddate;
 	private String dcontext;
 	private int uid;
 	public int getDid() {
@@ -13,10 +12,10 @@ public class DynamicInformation {
 	public void setDid(int did) {
 		this.did = did;
 	}
-	public Date getDdate() {
+	public String getDdate() {
 		return ddate;
 	}
-	public void setDdate(Date ddate) {
+	public void setDdate(String ddate) {
 		this.ddate = ddate;
 	}
 	public String getDcontext() {

@@ -60,8 +60,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 	  		
 	  		<div class="main">
-	  			<div class="register">
-	  				<form action="*" method="post">
+	  			<div class="Register">
+	  				<form action="RegisterServlet" method="post">
 	  				
 	  					<div>  <div class="info">用户名:</div>   <div class="info"><input type="text" name="userName" id="userName"/></div></div>
 	  					<div class="clear"></div>
@@ -71,16 +71,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	  					<div class="clear"></div> --> 
 	  					<div>  <div class="info">性别: </div>  <div class="info1"><input type="radio" name="sex" id="man"  value="男"  /> 男<input type="radio" name="sex" id="woman"  value="女"  style="margin-left: 20px;" />女</div></div>
 	  					<div class="clear"></div>
-	  					<div>  <div class="info">年龄: </div>  <div class="info"><input type="text" name="" id=""/></div>  </div>
+	  					<div>  <div class="info">年龄: </div>  <div class="info"><input type="text" name="age" id=""/></div>  </div>
 	  					<div class="clear"></div>
-	  					<div>  <div class="info">电话: </div>  <div class="info"><input type="text" name="" id=""/></div>  </div>
+	  					<div>  <div class="info">电话: </div>  <div class="info"><input type="text" name="tel" id=""/></div>  </div>
 	  					<div class="clear"></div>
-	  					<div>  <div class="info">地址: </div>  <div class="info"><input type="text" name="" id=""/></div>   </div>
+	  					<div>  <div class="info">地址: </div>  <div class="info"><input type="text" name="address" id=""/></div>   </div>
 						<div class="clear"></div>
 	  						<div class="input" style="padding-top:15px;">
-	  							<!-- <input type="submit" name="submit" value="register"  /> -->
-	  	 				<!-- 			<button href="" class="button gray small" width:="10px";> <font style="opacity:1;">注册</font> </button> 
-	  	 					 -->		
+	  							<input type="submit" name="submit" value="register"  />
+	  	 							<button href="" class="button gray small" width:="10px";> <font style="opacity:1;">注册</font> </button> 
+	  	 					 		
 	  						 </div>
 	  				
 	  				</form>
