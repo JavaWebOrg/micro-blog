@@ -6,8 +6,8 @@ body{
 	background:white;
 	width:30%;
 	height:80%; 
-	opacity:0.6;
-	filter:alpha(opacity=60);
+	opacity:1;
+	filter:alpha(opacity=100);
 	padding-top:90px;
 	overflow: hidden;
 	margin-left: -130px;
