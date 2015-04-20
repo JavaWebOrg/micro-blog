@@ -10,7 +10,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>My JSP 'register.jsp' starting page</title>
+    <title>注册</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -61,11 +61,11 @@ setTimeout("fresh()",10); */
 		  		<div class="navall" >
 		  			<ul id="ul"> 
 						<li  id="li"><a id="a"  href="index.html">首页</a></li> 
-						<li  id="li"><a id="a"  href="#">我的微博</a></li> 
-						<li  id="li"><a id="a"  href="#">个人中心</a></li> 
-						<li  id="li"><a id="a"  href="#">最新动态</a></li> 
-						<li  id="li"><a id="a"  href="#">留言板</a></li> 
-						<li  id="li"><a id="a"  href="#">帮助中心</a></li> 
+						<li  id="li"><a id="a"  href="myBlog.jsp">我的微博</a></li> 
+						<li  id="li"><a id="a"  href="personInfo.jsp">个人中心</a></li> 
+						<li  id="li"><a id="a"  href="lastInfo.jsp">最新动态</a></li> 
+						<li  id="li"><a id="a"  href="message.jsp">留言板</a></li> 
+						<li  id="li"><a id="a"  href="help.jsp">帮助中心</a></li> 
 					</ul>
 				</div>
 	  		</div>
