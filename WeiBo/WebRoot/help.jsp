@@ -47,6 +47,9 @@
 
 	  		
 	  		<div class="main">
+	  			<div>
+	  				<font color="red">你好,欢迎使用微博网页端</font>
+	  			</div>
 			</div>
 			
 	  		<div class="footer">footer</div>  		
