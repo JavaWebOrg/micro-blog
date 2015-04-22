@@ -1,0 +1,22 @@
+*{ margin: 0; padding: 0; text-decoration: none;}    /* 全局设定, 下划线为零 */
+body { padding: 20px;} 
+#picContainer { width: 440px; height: 213px; border: 0px solid #333; overflow: hidden; position: relative; float:left;} /* 设定图片容器大小,宽度(需要轮播的图片的总共宽度,这里是7张图片),border,overflow,position属性     position：absolute这个是绝对定位；是相对于浏览器的定位,position：relative是相对定位，是相对于前面的容器定位的。; */
+
+#picList { width: 3280px; height: 213px; position: absolute; z-index: 1;overflow: hidden;} 
+/*  图片列表的宽度,高度,位置 z-index表示的是层叠, 比如两个图片一个在上面显示一个在下面显示, 可以使用为 负值, 值大的在上面显示 */
+
+#picList img { float: left;}  /*给图片加入浮动元素*/
+
+#picButtons { position: relative; height: 10px; width: 100px; z-index: 2; bottom: 20px; left: -8px;bottom: -4px}
+/*在图片的下方加入一些按钮*/
+
+#picButtons span { cursor: pointer; float: left; border: 1px solid #fff; width: 10px; height: 10px; border-radius: 50%; background: #333; margin-right: 5px;}  /*按钮*/
+
+
+#picButtons .on {  background: orange;}
+.picArrow { cursor: pointer; display: none; line-height: 39px; text-align: center; font-size: 36px; font-weight: bold; width: 40px; height: 40px;  position: absolute; z-index: 2; top: 95px; background-color: RGBA(0,0,0,.3); color: #fff;}
+
+.picArrow:hover { background-color: RGBA(0,0,0,.7);}
+#picContainer:hover .picArrow { display: block;}
+#picPrev { left: 2px;}
+#picNext { right: 2px;}
