@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+.main{
+		width:720px;heigth:100%;
+	}
+.blogLeft{
+	float:left;background-color:red;width:20%;height:100%;
+	}
+	
+.blogMiddle{
+	float:left; background-color:green;width:62%;height:100%;margin-left:8px;
+	}
+.blogRight{
+float:left; background-color:pink;width:16%;height:100%;margin-left:6px;
+}
