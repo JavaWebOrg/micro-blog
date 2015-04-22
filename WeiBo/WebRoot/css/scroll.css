@@ -11,7 +11,7 @@
     height: 100%;
 }
 .v_show {
-    margin-top:-3px;
+    margin-top:0px;
     float: left;
     height: 100%;
     overflow: hidden;
@@ -47,14 +47,14 @@
     top: 92%;
 }
 .circle li {
-    background: none repeat scroll 0 0 #ccc;/*#ccc 平常状况下显示的背景色*/
+    background: none repeat scroll 0 0 #ccc;/*#ccc 骞冲父鐘跺喌涓嬫樉绀虹殑鑳屾櫙鑹�/
     float: left;
     height: 20px;
     margin-right: 10px;
     width: 10px;
 }
 .circle .circle-cur {
-    background: none repeat scroll 0 0 #f00;/*点到图片下的数字时显示的数字*/
+    background: none repeat scroll 0 0 #f00;/*鐐瑰埌鍥剧墖涓嬬殑鏁板瓧鏃舵樉绀虹殑鏁板瓧*/
     /*#f00*/
 }
 .prev, .next {
