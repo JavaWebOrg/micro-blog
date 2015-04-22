@@ -1,0 +1,45 @@
+@CHARSET "UTF-8";
+body{
+	text-align: center;
+}
+.register{
+	background:white;
+	width:30%;
+	height:80%; 
+	opacity:1;
+	filter:alpha(opacity=100);
+	padding-top:90px;
+	overflow: hidden;
+	margin-left: -130px;
+	
+}
+
+.info{
+	/* 对齐了 */
+	 float: left;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: right;
+    width: 160px;
+}
+.info1{
+	/* 对齐了 */
+	 float: left;
+    font-size: 14px;
+    line-height: 30px;
+    padding-left:40px;
+    text-align: left;
+    width: 160px;
+}
+table tr td {
+	width:60%;
+	height:100%;
+	border:1px #000 solid ;
+	text-align: center;
+	line-height: center;
+}
+.table td{
+		width:100px;;
+	height:100px';
+}
+
