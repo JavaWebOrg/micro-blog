@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/button.css">
 	<link rel="stylesheet" type="text/css" href="./css/nav.css">
 	<link rel="stylesheet" type="text/css" href="./css/clear.css">
-	<link rel="stylesheet" type="text/css" href="./css/register.css">
+	<link rel="stylesheet" type="text/css" href="./css/myblog.css">
 	<script type="text/javascript" src="js/jquery-1.4.4.js"></script>
 	<script type="text/javascript" src="js/jqueryme.js"></script>
 	<meta charset="UTF-8">
@@ -47,7 +47,9 @@
 
 	  		
 	  		<div class="main">
-			</div>
+	  			<div class="blogLeft" ></div>
+	  			<div class="blogMiddle"></div>
+	  			<div class="blogRight"></div>
 			
 	  		<div class="footer">
 					<p><a href="#">weibo简介</a><i>|</i><a href="#">weibo公告</a><i>|</i> <a href="#">招纳贤士</a><i>|</i><a href="#">联系我们</a><i>|</i>客服热线：188-188-168</p>
