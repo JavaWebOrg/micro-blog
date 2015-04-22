@@ -49,7 +49,10 @@
 	  		<div class="main">
 			</div>
 			
-	  		<div class="footer">footer</div>  		
+	  		<div class="footer">
+					<p><a href="#">weibo简介</a><i>|</i><a href="#">weibo公告</a><i>|</i> <a href="#">招纳贤士</a><i>|</i><a href="#">联系我们</a><i>|</i>客服热线：188-188-168</p>
+					<p>Copyright &copy;版权所有&nbsp;&nbsp;&nbsp;京ICP备88888888号&nbsp;&nbsp;&nbsp;京ICP证B8888-8888号&nbsp;&nbsp;&nbsp;某市公安局XX分局备案编号：1681681681818168</p>
+			</div>     		
 	  </div>
 
 </body>
