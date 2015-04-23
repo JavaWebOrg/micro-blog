@@ -17,7 +17,7 @@
 
 
 </head>
-<body>
+<body height="1000px">
 
  <div class="container" align="center">
 
@@ -47,8 +47,56 @@
 
 	  		
 	  		<div class="main">
-	  			<div class="blogLeft" ></div>
-	  			<div class="blogMiddle"></div>
+	  			<div class="blogLeft" >
+	  				<a href="#">消息</a>
+	  				<a href="#">收藏</a>
+	  				<a href="#">好友圈</a>
+	  			</div>
+	  			<div class="blogMiddle">
+	  				<div class="something"></div>
+	  				<div class="myblog">
+	  					<form action="#" method="post">
+	  						<textarea rows="5" cols="70" class="text" >nihao </textarea>
+	  						<button type="submit" class="button orange medium" style="float:right;margin-right:28px;margin-top:5px;"> <font style="opacity:1;">发表微博</font> </button> 
+	  					</form>
+	  				</div>
+	  				<div class="clear"></div>
+	  				<div class="blognav">
+	  					<a >全部</a>
+	  					<a >原创</a>
+	  					<a >视频</a>
+	  					<a >音乐</a>
+	  					<a >图片</a>
+	  					
+							<div><img alt="serch" src="images/search.jpg" style="z-index: -1;">
+								<form action="#" method="post"><input class="bloginput"/></form>	</div>
+		  					</div>
+		  					<div style="width:10px;height:10px;"><a href="#" class="yes"></a></div>
+		  					
+		  					<div class="clear"></div>
+		  					
+		  			<div class="show">
+	  					<div class="msg"> 
+	  						<dl>
+						  	 <dt>取出的数据标题</dt>
+						   	<dd>取出的留言</dd>
+							</dl>
+	  					</div>
+	  					<div class="msg"> 
+	  						<dl>
+						  	 <dt>计算机</dt>
+						   	<dd>用来计算的仪器 </dd>
+							</dl>
+	  					</div>
+	  					<div class="msg"> 
+	  						<dl>
+						  	 <dt>显示器</dt>
+						  	 <dd>以视觉方式显示信息的装置 </dd>
+							</dl>
+	  					</div>
+	  				</div>
+	  					
+	  			</div>
 	  			<div class="blogRight"></div>
 			
 	  		<div class="footer">
@@ -56,6 +104,6 @@
 					<p>Copyright &copy;版权所有&nbsp;&nbsp;&nbsp;京ICP备88888888号&nbsp;&nbsp;&nbsp;京ICP证B8888-8888号&nbsp;&nbsp;&nbsp;某市公安局XX分局备案编号：1681681681818168</p>
 			</div>   		
 	  </div>
-
+</div>
 </body>
 </html>

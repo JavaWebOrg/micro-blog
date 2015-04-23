@@ -1,14 +1,116 @@
 @CHARSET "UTF-8";
 .main{
+		background-color:red;
 		width:720px;heigth:100%;
+		padding-top:5px;
+		font:12px/1.3 'Arial','Microsoft YaHei';
 	}
 .blogLeft{
-	float:left;background-color:red;width:20%;height:100%;
+	float:left;background-color:#5C6276;width:20%;height:100%;	text-align: center;
 	}
+
+.blogLeft a{
+	margin:3px auto 3px auto;
+	display: block;
+	color:white;
+	line-height:30px;
+	width:50px;
+	height:30px;
+}
+.blogLeft a:hover{
+	background-color: #7C8191;
+	width:100%;
+	text-decoration: none;
+}
 	
 .blogMiddle{
-	float:left; background-color:green;width:62%;height:100%;margin-left:8px;
+	float:left; background-color:#F2F2F5;width:62%;height:100%;margin-left:8px;
 	}
+	.something{
+	height:33px;
+	background-image: url("../images/something.jpg");
+	background-repeat: no-repeat;
+	}
+	.text:hover{
+		border-color: #FA7D3C;
+		padding:0;
+		margin:0;
+	}
+	.blognav{
+		width:100%;
+		height:30px;
+		background-color: white;
+	}
+	.blognav a{
+		display:block;
+		float:left;
+		width:52px;;
+		height:30px;
+		line-height: 30px;
+	}
+	.blognav a:hover{
+		background-image: url("../images/jiantou.jpg");
+		background-repeat: no-repeat;
+		cursor:pointer;
+		color:orange;
+		text-decoration: none;
+	}
+	.blognav div{
+		float:right;
+		width:186px;
+		heigth:32px;
+		z-index: -1;
+	}
+		
+	.bloginput{
+	height:21px;z-index: 1;position: relative;position: relative;top: -28px;left: -27px;width:122px;margin:0;padding:0;
+	border-right:0px;
+	}
+	.yes{
+	position: relative;display:block;background-color:white; left: 184px;top: -20px; width:12px;height:12px;opacity:0.5;
+	}
+	.yes:HOVER{
+		cursor: pointer;
+		
+	}
+	
+	
+	.msg{
+		border:2px red solid;
+		margin-left:10px;
+		margin-top:5px; 
+	}
+	
+	
 .blogRight{
 float:left; background-color:pink;width:16%;height:100%;margin-left:6px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

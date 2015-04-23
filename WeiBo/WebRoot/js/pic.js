@@ -22,9 +22,9 @@
             function arrowMove(direction){//左移就是减,右移就是加
                 moving=true;
                 var newLeft=parseInt(list.style.left)+direction;
-                var time=300;//位移总时间    
+                var time=500;//位移总时间    
                         //    time和interval的值如果相同就是图片一张一张的显示, 如果不相同才会有慢慢滑动的效果
-                var interval=100;//位移间隔时间
+                var interval=300;//位移间隔时间
                 var speed=direction/(time/interval);//每次位移量
 
                 function go(){

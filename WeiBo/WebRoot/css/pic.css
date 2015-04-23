@@ -7,12 +7,10 @@ body { padding: 20px;}
 
 #picList img { float: left;}  /*给图片加入浮动元素*/
 
-#picButtons { position: relative; height: 10px; width: 100px; z-index: 2; bottom: 20px; left: -8px;bottom: -4px}
+#picButtons { position: relative; height: 10px; width: 100px; z-index: 2;  left: -8px;bottom: -180px}
 /*在图片的下方加入一些按钮*/
 
 #picButtons span { cursor: pointer; float: left; border: 1px solid #fff; width: 10px; height: 10px; border-radius: 50%; background: #333; margin-right: 5px;}  /*按钮*/
-
-
 #picButtons .on {  background: orange;}
 .picArrow { cursor: pointer; display: none; line-height: 39px; text-align: center; font-size: 36px; font-weight: bold; width: 40px; height: 40px;  position: absolute; z-index: 2; top: 95px; background-color: RGBA(0,0,0,.3); color: #fff;}
 
@@ -20,3 +18,12 @@ body { padding: 20px;}
 #picContainer:hover .picArrow { display: block;}
 #picPrev { left: 2px;}
 #picNext { right: 2px;}
+
+
+
+
+
+
+
+
+
