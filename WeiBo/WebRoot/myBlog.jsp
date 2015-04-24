@@ -78,26 +78,60 @@
 		  			<div class="show">
 	  					<div class="msg"> 
 	  						<dl>
-						  	 <dt>取出的数据标题</dt>
-						   	<dd>取出的留言</dd>
+						  	 <dt>微博用户</dt>
+						   	<dd>微博内容</dd>
 							</dl>
 	  					</div>
 	  					<div class="msg"> 
 	  						<dl>
-						  	 <dt>计算机</dt>
-						   	<dd>用来计算的仪器 </dd>
+						  	 <dt>微博用户</dt>
+						   	<dd>微博内容</dd>
 							</dl>
 	  					</div>
 	  					<div class="msg"> 
 	  						<dl>
-						  	 <dt>显示器</dt>
-						  	 <dd>以视觉方式显示信息的装置 </dd>
+						  	 <dt>微博用户</dt>
+						   	<dd>微博内容</dd>
 							</dl>
 	  					</div>
 	  				</div>
 	  					
 	  			</div>
-	  			<div class="blogRight"></div>
+	  			
+	  			<div class="blogRight">	  				
+	  				<div class="blogfirst">
+	  				<p>最近访客:</p>
+		  				<dl>
+		  					<dt>
+		  						访客名:
+		  					</dt>
+		  					<dd>
+		  						访客信息:
+		  					</dd>
+		  				</dl>
+	  				</div>
+	  				<div class="blogsecond">
+		  				<dl>
+		  					<dt>
+		  						热门微博
+		  					</dt>
+		  					<dd>
+		  						热门微博详情
+		  					</dd>
+		  				</dl>
+	  				</div>
+	  				<div class="blogthird">
+		  				<dl>
+		  					<dt>
+		  						电影推荐
+		  					</dt>
+		  					<dd>
+		  						电影信息
+		  					</dd>
+		  				</dl>
+	  				</div>
+	  				
+	  			</div>
 			
 	  		<div class="footer">
 					<p><a href="#">weibo简介</a><i>|</i><a href="#">weibo公告</a><i>|</i> <a href="#">招纳贤士</a><i>|</i><a href="#">联系我们</a><i>|</i>客服热线：188-188-168</p>
