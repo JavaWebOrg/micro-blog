@@ -7,7 +7,6 @@
             var index=1;//选择第index个点亮
             var moving=false;   //moving的作用是判断是否移动,这样可以使得在多次点击下一张,或者图片按钮时不会出现卡顿现象
             var timer; // 图片自动播放的定时器
-
             function showButton(){  //让点亮起来的函数. 因为有个on的class,on的css属性可以改变颜色;
                 for (var i = 0; i < buttons.length; i++) {//遍历循环让不是选中的图片下面对应的button黑 , 
                     if(buttons[i].className=="on"){

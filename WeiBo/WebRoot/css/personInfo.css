@@ -1,0 +1,67 @@
+@CHARSET "UTF-8";
+.main{
+	background-color:red;width:720px;heigth:100%;padding-top:5px;font:12px/1.3 'Arial','Microsoft YaHei';
+}
+.leftInfo{
+	float: left;
+	background-color: #efffef;
+	width: 20%;
+	height: 100%;
+	text-align: center;
+}
+	.leftInfo a{
+		margin:3px auto 3px auto;
+		display:block;
+		cursor: pointer;
+		line-height:30px;
+		width:50px;
+		height:30px;
+		text-align:center;
+	}
+	.leftInfo a:hover{
+		background-color: #E6E6E6;
+		width:100%;
+		text-decoration: none;
+	}
+
+.rightInfo{
+	float: left;
+	background-color: #F2F2F5;
+	width: 78%;
+	height: 100%;
+	margin-left: 8px;
+
+}
+
+	.myInfo {
+		border:1px red solid;
+		margin-bottom: 5px;
+		
+	}
+	h4{
+		float:left;
+	}
+	span{
+		text-align: right;
+		position: relative;
+		left:228px;
+	}
+	form{
+		border:1px red solid;
+		display:block;
+		margin-top:30px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

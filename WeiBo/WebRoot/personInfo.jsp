@@ -10,10 +10,10 @@
 	<link rel="stylesheet" type="text/css" href="./css/nav.css">
 	<link rel="stylesheet" type="text/css" href="./css/clear.css">
 	<link rel="stylesheet" type="text/css" href="./css/register.css">
-	<script type="text/javascript" src="js/jquery-1.4.4.js"></script>
-	<script type="text/javascript" src="js/jqueryme.js"></script>
-	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="./css/personInfo.css">
+	<script language="javascript" type="text/javascript" src="js/jquery-1.4.4.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+        
 
 
 </head>
@@ -47,13 +47,98 @@
 
 	  		
 	  		<div class="main">
+ 			<div class="leftInfo">
+ 				<a href="#"><font size="12px">信息</font></a>
 			</div>
+			
+	  		<div class="rightInfo">
+	  		
+			  		<div class="myInfo"  >		
+			     	    <h4 >昵称:</h4> <span>打开</span>
+					    <div>
+					    	<form class="panel" action="#" method="post" id="formId"  style="display: none;">
+					           	 新昵称:<input type="text" value="" name="userNameInfo"/>
+							        <input name="submit" type="submit" value="提交修改"/>
+							        <input class="hidval" value="0" type="hidden"/>
+					      </form>
+					  </div>
+			        </div>
+			        
+			  		<div  class="myInfo"  >		
+						         <h4>  密码: </h4> <span>打开</span>
+					    <form class="panel" action="#" method="post" id="formId"  style="display: none;">
+					           	 新密码:<input type="text" value="" name="userNameInfo"/>
+							        <input name="submit" type="submit" value="提交修改"/>
+							       <input class="hidval" value="0" type="hidden"/>
+					      </form>
+			        </div>
+			        
+			        <div  class="myInfo"  >		
+						          <h4>  性别: </h4>   <span>打开</span>
+					    <form class="panel" action="#" method="post" id="formId"  style="display: none;">
+					           	 性别:<input type="text" value="" name="userNameInfo"/>
+							        <input name="submit" type="submit" value="提交修改"/>
+							        <input class="hidval" value="0" type="hidden"/>
+					      </form>
+			        </div>
+			        
+			        <div  class="myInfo"  >		
+						     <h4>年龄</h4><span>打开</span>
+					    <form class="panel" action="#" method="post" id="formId"  style="display: none;">
+					           	 年龄:<input type="text" value="" name="userNameInfo"/>
+							        <input name="submit" type="submit" value="提交修改"/>
+							        <input class="hidval" value="0" type="hidden"/>
+					      </form>
+			        </div>
+			        
+			        <div  class="myInfo"  >		
+						     <h4>电话</h4> <span>打开</span>
+					    <form class="panel" action="#" method="post" id="formId"  style="display: none;">
+					           	新电话:<input type="text" value="" name="userNameInfo"/>
+							        <input name="submit" type="submit" value="提交修改"/>
+							        <input class="hidval" value="0" type="hidden"/>
+					      </form>
+			        </div>
+			        
+			        <div  class="myInfo"  >		
+						       <h4>地址</h4> <span>打开</span>
+					    <form class="panel" action="#" method="post" id="formId"  style="display: none;">
+					           	 新地址:<input type="text" value="" name="userNameInfo"/>
+							        <input name="submit" type="submit" value="提交修改"/>
+							       <input class="hidval" value="0" type="hidden"/>
+					      </form>
+			        </div>
+		    
+		   				
+		    
+		    
+		    </div>	
+			
 			
 	  		<div class="footer">
 					<p><a href="#">weibo简介</a><i>|</i><a href="#">weibo公告</a><i>|</i> <a href="#">招纳贤士</a><i>|</i><a href="#">联系我们</a><i>|</i>客服热线：188-188-168</p>
 				<p>Copyright &copy;版权所有&nbsp;&nbsp;&nbsp;京ICP备88888888号&nbsp;&nbsp;&nbsp;京ICP证B8888-8888号&nbsp;&nbsp;&nbsp;某市公安局XX分局备案编号：1681681681818168</p>
 			</div> 	
 	  </div>
+       
 
-</body>
+
+</body> 
+<script>
+$('.myInfo').each(function () {
+	$form = $('form');
+	//console
+	$(this).bind('click', function () {
+		
+		 if ( $(".hidval").eq($(this).index()).val() == 0) {
+               $form.eq($(this).index()).show(500);
+                $(".hidval").eq($(this).index()).val(1);
+            } else {
+                $form.eq($(this).index()).hide(500);
+                  $(".hidval").eq($(this).index()).val(0);
+            }
+		 $('span').eq($(this).index()).html() == "打开" ? $('span').eq($(this).index()).html("关闭") : $('span').eq($(this).index()).html("打开");
+	})
+	})
+</script>
 </html>

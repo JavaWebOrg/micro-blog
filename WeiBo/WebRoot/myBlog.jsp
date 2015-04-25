@@ -17,7 +17,7 @@
 
 
 </head>
-<body height="1000px">
+<body>
 
  <div class="container" align="center">
 
