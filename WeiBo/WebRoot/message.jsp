@@ -18,14 +18,14 @@
 	.message{
 		width:720px;
 		height:100%;
-		border:2px red solid;
+		/* border:2px red solid; */
 	}
 	#mLeft{
 		float: left;
 		border:0px red solid;
 		width: 75%;
 		height: 100%;
-		background-color: green;
+		background-color: #efefef;
 	}
 
 	#mRight{
@@ -44,6 +44,9 @@
 	float:left;font-size:18px;position:relative;left:30px;top:30px;
 	font-family: sans-serif;
 	font-weight: bold;
+	left: 15px;
+	top: 20px;
+	
 	}
 	.show{
 	margin-top:20px; border:2px red solid;width:100%;height:250px;
@@ -93,7 +96,7 @@
 	  					<div class="liuyan">留言内容:</div>
 	  					<div class="text">
 	  						<form>
-	  						<textarea rows="10" name="message" id="message" cols="80" style="margin: 0px; width: 434px; height: 180px;">nihao </textarea>	
+	  						<textarea rows="10" name="message" id="message" cols="80" style="margin: 0px; width: 425px; height: 180px;">nihao </textarea>	
 	  						<button type="submit" class="button orange medium"> 提交留言</button>
 	  						</form>
 	  					</div>
@@ -107,15 +110,15 @@
 							</dl>
 	  					</div>
 	  					<div class="float msg"> 
-	  						<dl>
-						  	 <dt>计算机</dt>
-						   	<dd>用来计算的仪器 </dd>
+						  	 <dl>
+						  	 <dt>取出的数据标题</dt>
+						   	<dd>取出的留言</dd>
 							</dl>
 	  					</div>
 	  					<div class="float msg"> 
 	  						<dl>
-						  	 <dt>显示器</dt>
-						  	 <dd>以视觉方式显示信息的装置 </dd>
+						  	 <dt>取出的数据标题</dt>
+						   	<dd>取出的留言</dd>
 							</dl>
 	  					</div>
 	  				</div>

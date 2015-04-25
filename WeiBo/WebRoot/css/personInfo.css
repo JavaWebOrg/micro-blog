@@ -34,22 +34,22 @@
 }
 
 	.myInfo {
-		border:1px red solid;
+/* 		border:1px red solid; */
 		margin-bottom: 5px;
 		
 	}
 	h4{
 		float:left;
 	}
-	span{
-		text-align: right;
+	button{
 		position: relative;
 		left:228px;
 	}
 	form{
-		border:1px red solid;
+	/* 	border:1px red solid; */
 		display:block;
-		margin-top:30px;
+		margin-top:15px;
+		margin-bottom: 15px;
 	}
 
 

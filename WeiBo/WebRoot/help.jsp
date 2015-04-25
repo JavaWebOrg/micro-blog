@@ -49,6 +49,7 @@
 	  		<div class="main">
 	  			<div>
 	  				<font color="red">你好,欢迎使用微博网页端</font>
+	  				<font  color="orange"><h1> 如果有页面显示不正常,请您刷新页面.如果还不行,欢迎给我们反馈!</h1></font>
 	  			</div>
 			</div>
 			

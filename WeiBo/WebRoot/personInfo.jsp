@@ -54,7 +54,7 @@
 	  		<div class="rightInfo">
 	  		
 			  		<div class="myInfo"  >		
-			     	    <h4 >昵称:</h4> <span>打开</span>
+			     	    <h4 >昵称:</h4> <button>打开</button>
 					    <div>
 					    	<form class="panel" action="#" method="post" id="formId"  style="display: none;">
 					           	 新昵称:<input type="text" value="" name="userNameInfo"/>
@@ -65,7 +65,7 @@
 			        </div>
 			        
 			  		<div  class="myInfo"  >		
-						         <h4>  密码: </h4> <span>打开</span>
+						         <h4>  密码: </h4> <button>打开</button>
 					    <form class="panel" action="#" method="post" id="formId"  style="display: none;">
 					           	 新密码:<input type="text" value="" name="userNameInfo"/>
 							        <input name="submit" type="submit" value="提交修改"/>
@@ -74,7 +74,7 @@
 			        </div>
 			        
 			        <div  class="myInfo"  >		
-						          <h4>  性别: </h4>   <span>打开</span>
+						          <h4>  性别: </h4>   <button>打开</button>
 					    <form class="panel" action="#" method="post" id="formId"  style="display: none;">
 					           	 性别:<input type="text" value="" name="userNameInfo"/>
 							        <input name="submit" type="submit" value="提交修改"/>
@@ -83,7 +83,7 @@
 			        </div>
 			        
 			        <div  class="myInfo"  >		
-						     <h4>年龄</h4><span>打开</span>
+						     <h4>年龄</h4><button>打开</button>
 					    <form class="panel" action="#" method="post" id="formId"  style="display: none;">
 					           	 年龄:<input type="text" value="" name="userNameInfo"/>
 							        <input name="submit" type="submit" value="提交修改"/>
@@ -92,7 +92,7 @@
 			        </div>
 			        
 			        <div  class="myInfo"  >		
-						     <h4>电话</h4> <span>打开</span>
+						     <h4>电话</h4> <button>打开</button>
 					    <form class="panel" action="#" method="post" id="formId"  style="display: none;">
 					           	新电话:<input type="text" value="" name="userNameInfo"/>
 							        <input name="submit" type="submit" value="提交修改"/>
@@ -101,7 +101,7 @@
 			        </div>
 			        
 			        <div  class="myInfo"  >		
-						       <h4>地址</h4> <span>打开</span>
+						       <h4>地址</h4> <button>打开</button>
 					    <form class="panel" action="#" method="post" id="formId"  style="display: none;">
 					           	 新地址:<input type="text" value="" name="userNameInfo"/>
 							        <input name="submit" type="submit" value="提交修改"/>
@@ -137,7 +137,7 @@ $('.myInfo').each(function () {
                 $form.eq($(this).index()).hide(500);
                   $(".hidval").eq($(this).index()).val(0);
             }
-		 $('span').eq($(this).index()).html() == "打开" ? $('span').eq($(this).index()).html("关闭") : $('span').eq($(this).index()).html("打开");
+		 $('button').eq($(this).index()).html() == "打开" ? $('button').eq($(this).index()).html("关闭") : $('button').eq($(this).index()).html("打开");
 	})
 	})
 </script>

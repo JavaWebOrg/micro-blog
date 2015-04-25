@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/nav.css">
 	<link rel="stylesheet" type="text/css" href="./css/clear.css">
 	<link rel="stylesheet" type="text/css" href="./css/register.css">
+		<link rel="stylesheet" type="text/css" href="./css/lastInfo.css">
 	<script type="text/javascript" src="js/jquery-1.4.4.js"></script>
 	<script type="text/javascript" src="js/jqueryme.js"></script>
 	<meta charset="UTF-8">
@@ -47,6 +48,13 @@
 
 	  		
 	  		<div class="main">
+	  		<div style="background-color: red;">
+	  			<h1>官方信息,新闻啊什么的.</h1>
+	  		</div>
+	  		
+	  		
+	  		
+	  		
 			</div>
 			
 	  		<div class="footer">
