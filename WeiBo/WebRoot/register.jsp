@@ -65,7 +65,7 @@ setTimeout("fresh()",10); */
 						<li  id="li"><a id="a"  href="lastInfo.jsp">最新动态</a></li> 
 						<li  id="li"><a id="a"  href="message.jsp">留言板</a></li> 
 						<li  id="li"><a id="a"  href="help.jsp">帮助中心</a></li> 
-						<li  id="li"><a id="a"  href="index.html">未来展望</a></li>
+						<li  id="li"><a id="a"  href="index.html">&nbsp;</a></li>
 					</ul>
 				</div>
 	  		</div>
