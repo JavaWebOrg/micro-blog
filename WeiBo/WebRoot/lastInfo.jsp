@@ -5,18 +5,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>最新动态</title>
-<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
 	<link rel="stylesheet" type="text/css" href="./css/button.css">
 	<link rel="stylesheet" type="text/css" href="./css/nav.css">
 	<link rel="stylesheet" type="text/css" href="./css/clear.css">
 	<link rel="stylesheet" type="text/css" href="./css/register.css">
-		<link rel="stylesheet" type="text/css" href="./css/lastInfo.css">
-	<script type="text/javascript" src="js/jquery-1.4.4.js"></script>
-	<script type="text/javascript" src="js/jqueryme.js"></script>
-	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="./css/lastInfo.css">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-
 </head>
 <body>
 
@@ -32,7 +28,7 @@
 
 
 
-	  			  		<div class="nav" >
+	  		<div class="nav" >
 		  		<div class="clear"></div>
 		  		<div class="navall" >
 		  			<ul id="ul"> 
@@ -42,6 +38,7 @@
 						<li  id="li"><a id="a"  href="lastInfo.jsp">最新动态</a></li> 
 						<li  id="li"><a id="a"  href="message.jsp">留言板</a></li> 
 						<li  id="li"><a id="a"  href="help.jsp">帮助中心</a></li>  
+						<li  id="li"><a id="a"  href="index.html">未来展望</a></li> 
 					</ul>
 				</div>
 	  		</div>
@@ -64,4 +61,7 @@
 	  </div>
 
 </body>
+
+	<script type="text/javascript" src="js/jquery-1.4.4.js"></script>
+	<script type="text/javascript" src="js/jqueryme.js"></script>
 </html>
