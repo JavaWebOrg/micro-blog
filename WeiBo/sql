@@ -1,0 +1,56 @@
+/*创建数据库*/
+drop database weibo;
+create database weibo;
+use weibo;
+
+/*创建t_user表*/
+drop t_user;
+create table t_user(
+	uid int(10) not null primary key auto_increment,
+	uname varchar(20),
+	upwd varchar(20),
+	usex varchar(4),
+	uage int(3),
+	utel varchar(20),
+	uaddress varchar(20),
+	lid int(10),
+	did int(10),
+	hid int(10)
+);
+insert into t_user(uid,uname,upwd,usex,uage,utel,uaddress) 
+values(1,'我们','123456','m',34,'45612379','csust');
+insert into t_user(uid,uname,upwd,usex,uage,utel,uaddress) 
+values(2,"lisi","123456","m",34,"45612379","csust");
+
+/*创建t_message*/
+drop t_message;
+create table t_message(
+	lid int(10) not null primary key auto_increment,
+	ldate varchar(20),
+	lcontext varchar(100),
+	uid int(10)
+);
+insert into t_message(lid,ldate,lcontext) value(1,"2015-4-23","meiqushangke");
+insert into t_message(lid,ldate,lcontext) value(2,"2015-4-23","meiqushangke");
+
+
+/*创建t_friend表*/
+drop t_friend;
+create table t_friend(
+	hid int(10) not null primary key auto_increment,
+	hdate varchar(20) ,
+	xuid int(10),
+	yuid int(10),
+	xuname varchar(20),
+	yuname varchar(20),
+	uid int(10)
+);
+
+/*创建t_info表*/
+drop t_info;
+create table t_info(
+	did int(10) not null primary key auto_increment,
+	ddate varchar(20),
+	dcontext varchar(100),
+	uid int(10)
+);
