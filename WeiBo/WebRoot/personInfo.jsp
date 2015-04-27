@@ -13,7 +13,6 @@
 	<link rel="stylesheet" type="text/css" href="./css/clear.css">
 	<link rel="stylesheet" type="text/css" href="./css/register.css">
 	<link rel="stylesheet" type="text/css" href="./css/personInfo.css">
-	<script language="javascript" type="text/javascript" src="js/jquery-1.4.4.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
         
 
@@ -49,6 +48,7 @@
 						<li  id="li"><a id="a"  href="lastInfo.jsp">最新动态</a></li> 
 						<li  id="li"><a id="a"  href="message.jsp">留言板</a></li> 
 						<li  id="li"><a id="a"  href="help.jsp">帮助中心</a></li> 
+						<li  id="li"><a id="a"  href="index.html">未来展望</a></li>
 					</ul>
 				</div>
 	  		</div>
@@ -132,6 +132,8 @@
 
 
 </body> 
+	<script language="javascript" type="text/javascript" src="js/jquery-1.4.4.js"></script>
+
 <script>
 $('.myInfo').each(function () {
 	$form = $('form');
@@ -149,4 +151,5 @@ $('.myInfo').each(function () {
 	})
 	})
 </script>
+
 </html>

@@ -10,9 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/nav.css">
 	<link rel="stylesheet" type="text/css" href="./css/clear.css">
 	<link rel="stylesheet" type="text/css" href="./css/register.css">
-	<script type="text/javascript" src="js/jquery-1.4.4.js"></script>
-	<script type="text/javascript" src="js/jqueryme.js"></script>
-	<meta charset="UTF-8">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 
@@ -41,6 +39,7 @@
 						<li  id="li"><a id="a"  href="lastInfo.jsp">最新动态</a></li> 
 						<li  id="li"><a id="a"  href="message.jsp">留言板</a></li> 
 						<li  id="li"><a id="a"  href="help.jsp">帮助中心</a></li> 
+						<li  id="li"><a id="a"  href="index.html">未来展望</a></li> 
 					</ul>
 				</div>
 	  		</div>
@@ -49,7 +48,7 @@
 	  		<div class="main">
 	  			<div>
 	  				<font color="red">你好,欢迎使用微博网页端</font>
-	  				<font  color="orange"><h1> 如果有页面显示不正常,请您刷新页面.如果还不行,欢迎给我们反馈!</h1></font>
+	  				 <font  color="orange"> <h1>如果有页面显示不正常,请您刷新页面.如果还不行,欢迎给我们反馈!</h1> </font>
 	  			</div>
 			</div>
 			
@@ -59,4 +58,7 @@
 	  </div>
 
 </body>
+
+	<script type="text/javascript" src="js/jquery-1.4.4.js"></script>
+	<script type="text/javascript" src="js/jqueryme.js"></script>
 </html>
