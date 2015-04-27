@@ -5,9 +5,11 @@ import java.util.Date;
 import com.weibo.dao.DynamicInformationDao;
 import com.weibo.dao.FriendDao;
 import com.weibo.dao.MessageDao;
+import com.weibo.dao.UserDao;
 import com.weibo.entity.DynamicInformation;
 import com.weibo.entity.Friend;
 import com.weibo.entity.Message;
+import com.weibo.entity.User;
 
 public class TestSql {
 	
@@ -47,13 +49,19 @@ public class TestSql {
 		
 		
 		//
-		Friend friend = new Friend();
+		/*Friend friend = new Friend();
 		FriendDao fdao = new FriendDao();
 		friend.setXuid(1);
 		friend.setYuid(2);
 		friend.setXunane("张三");
 		friend.setYuname("李四");
 		friend.setUid(2);
-		fdao.InsertFriend(friend);
+		fdao.InsertFriend(friend);*/
+		User user = new User();
+		UserDao udao = new UserDao();
+		user = udao.SearchUser("admin", "uname");
+		if(user!=null){
+			System.out.println("utel = "+user.getUtel());
+		}
 	}
 }

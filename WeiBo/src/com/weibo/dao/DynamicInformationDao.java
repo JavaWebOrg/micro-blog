@@ -30,14 +30,14 @@ public class DynamicInformationDao {
 		return true;
 	}
 	//查询动态信息
-	public ArrayList<DynamicInformation> QueryInfor(String value,String choice){
+	public ArrayList<DynamicInformation> QueryInfor(int uid){
 		ArrayList<DynamicInformation> list = new ArrayList<DynamicInformation>();
 		try {
 			Connection conn = dbutil.GetCon();
-			String sql = "select * from t_infor where ? = ?";
+			String sql = "select * from t_infor where uid = ? order by ddate desc";
 			PreparedStatement pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, choice);
-			pstmt.setString(2, value);
+			//pstmt.setString(1, choice);
+			pstmt.setInt(1, uid);
 			ResultSet rs = pstmt.executeQuery();
 			while(rs.next()){
 				DynamicInformation curInfor = new DynamicInformation();

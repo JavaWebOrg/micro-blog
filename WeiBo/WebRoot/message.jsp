@@ -95,8 +95,8 @@
 	  				<div id="mLeft">
 	  					<div class="liuyan">留言内容:</div>
 	  					<div class="text">
-	  						<form>
-	  						<textarea rows="10" name="message" id="message" cols="80" style="margin: 0px; width: 425px; height: 180px;">nihao </textarea>	
+	  						<form action = "MessageServlet" method = "post">
+	  						<textarea rows="10" name="message" id="message" cols="80" style="margin: 0px; width: 425px; height: 180px;"> </textarea>	
 	  						<button type="submit" class="button orange medium"> 提交留言</button>
 	  						</form>
 	  					</div>

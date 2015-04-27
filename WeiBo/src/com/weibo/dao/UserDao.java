@@ -10,6 +10,7 @@ import com.weibo.jdbc.DbUtil;
 
 public class UserDao {
 	DbUtil dbutil = new DbUtil();
+	
 	//插入一条数据
 	public boolean Insert(User user) {
 		Connection conn;
@@ -36,13 +37,12 @@ public class UserDao {
 	}
 	
 	//搜索
-	public User SearchUser(String choice,String action) {
+	public User SearchUser(String value,String action) {
 		try {
 			Connection conn = dbutil.GetCon();
-			String sql = "select * from t_user where ? = ?";
+			String sql = "select * from t_user where "+action+" = ?";
 			PreparedStatement pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1,action);
-			pstmt.setString(2,choice);
+			pstmt.setString(1,value);
 			ResultSet rs =pstmt.executeQuery();
 			User curUser = null;
 			if(rs.next()){

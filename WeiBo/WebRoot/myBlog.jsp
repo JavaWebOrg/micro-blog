@@ -1,3 +1,5 @@
+<%@page import="com.weibo.entity.DynamicInformation"%>
+<%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -18,7 +20,11 @@
 
 </head>
 <body>
-
+	<% 
+		ArrayList<DynamicInformation> list = new ArrayList<DynamicInformation>();
+		list = (ArrayList<DynamicInformation>)session.getAttribute("dlist");
+		String name = (String)session.getAttribute("username");
+	%>
  <div class="container" align="center">
 
 	  		<div class="header">
@@ -55,8 +61,8 @@
 	  			<div class="blogMiddle">
 	  				<div class="something"></div>
 	  				<div class="myblog">
-	  					<form action="#" method="post">
-	  						<textarea rows="5" cols="70" class="text" >nihao </textarea>
+	  					<form action="MyBlogServlet" method="post">
+	  						<textarea rows="5" cols="70" class="text" name="info" > </textarea>
 	  						<button type="submit" class="button orange medium" style="float:right;margin-right:28px;margin-top:5px;"> <font style="opacity:1;">发表微博</font> </button> 
 	  					</form>
 	  				</div>
@@ -76,17 +82,21 @@
 		  					<div class="clear"></div>
 		  					
 		  			<div class="show">
-	  					<div class="msg"> 
+	  					<div class="msg">
+	  						<%if(list!=null){ %> 
 	  						<dl>
-						  	 <dt>微博用户</dt>
-						   	<dd>微博内容</dd>
+						  	 <dt><%=name %></dt>
+						   	<dd><%=list.get(0).getDcontext() %></dd>
 							</dl>
+							<%} %>
 	  					</div>
 	  					<div class="msg"> 
+	  					<%if(list!=null){ %> 
 	  						<dl>
-						  	 <dt>微博用户</dt>
-						   	<dd>微博内容</dd>
+						  	 <dt><%=name %></dt>
+						   	<dd><%=list.get(1).getDcontext() %></dd>
 							</dl>
+						<%} %>
 	  					</div>
 	  					<div class="msg"> 
 	  						<dl>

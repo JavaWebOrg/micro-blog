@@ -31,14 +31,13 @@ public class MessageDao {
 		return true;
 	}
 	//查询动态信息
-	public ArrayList<Message> QueryInfor(String value,String choice){
+	public ArrayList<Message> QueryInfor(String value,String action){
 		ArrayList<Message> list = new ArrayList<Message>();
 		try {
 			Connection conn = dbutil.GetCon();
-			String sql = "select * from t_message where ? = ?";
+			String sql = "select * from t_message where +action+ = ?";
 			PreparedStatement pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, choice);
-			pstmt.setString(2, value);
+			pstmt.setString(1, value);
 			ResultSet rs = pstmt.executeQuery();
 			while(rs.next()){
 				Message curMessage = new Message();

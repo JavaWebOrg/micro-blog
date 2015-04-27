@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
+<%@ page import="com.weibo.entity.User" %>
+<%@ page import="com.weibo.dao.UserDao" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -18,7 +20,13 @@
 
 </head>
 <body>
-
+<%
+	User user = new User();
+	UserDao udao = new UserDao();
+	String name= (String)session.getAttribute("username");
+	request.setCharacterEncoding("utf-8");
+	user = udao.SearchUser(name,"uname");
+ %>
  <div class="container" align="center">
 
 	  		<div class="header">
@@ -57,7 +65,7 @@
 			     	    <h4 >昵称:</h4> <button>打开</button>
 					    <div>
 					    	<form class="panel" action="#" method="post" id="formId"  style="display: none;">
-					           	 新昵称:<input type="text" value="" name="userNameInfo"/>
+					           	 新昵称:<input type="text" value="<%=user.getUname() %>" name="userNameInfo"/>
 							        <input name="submit" type="submit" value="提交修改"/>
 							        <input class="hidval" value="0" type="hidden"/>
 					      </form>
@@ -67,7 +75,7 @@
 			  		<div  class="myInfo"  >		
 						         <h4>  密码: </h4> <button>打开</button>
 					    <form class="panel" action="#" method="post" id="formId"  style="display: none;">
-					           	 新密码:<input type="text" value="" name="userNameInfo"/>
+					           	 新密码:<input type="password" value="<%=user.getUpwd() %>" name="userNameInfo"/>
 							        <input name="submit" type="submit" value="提交修改"/>
 							       <input class="hidval" value="0" type="hidden"/>
 					      </form>
@@ -76,16 +84,16 @@
 			        <div  class="myInfo"  >		
 						          <h4>  性别: </h4>   <button>打开</button>
 					    <form class="panel" action="#" method="post" id="formId"  style="display: none;">
-					           	 性别:<input type="text" value="" name="userNameInfo"/>
+					           	 性别:<input type="text" value="<%=user.getUsex() %>" name="userNameInfo"/>
 							        <input name="submit" type="submit" value="提交修改"/>
 							        <input class="hidval" value="0" type="hidden"/>
 					      </form>
 			        </div>
 			        
 			        <div  class="myInfo"  >		
-						     <h4>年龄</h4><button>打开</button>
+						     <h4>年龄: </h4><button>打开</button>
 					    <form class="panel" action="#" method="post" id="formId"  style="display: none;">
-					           	 年龄:<input type="text" value="" name="userNameInfo"/>
+					           	 年龄:<input type="text" value="<%=user.getUage() %>" name="userNameInfo"/>
 							        <input name="submit" type="submit" value="提交修改"/>
 							        <input class="hidval" value="0" type="hidden"/>
 					      </form>
@@ -94,7 +102,7 @@
 			        <div  class="myInfo"  >		
 						     <h4>电话</h4> <button>打开</button>
 					    <form class="panel" action="#" method="post" id="formId"  style="display: none;">
-					           	新电话:<input type="text" value="" name="userNameInfo"/>
+					           	新电话:<input type="text" value="<%=user.getUtel() %>" name="userNameInfo"/>
 							        <input name="submit" type="submit" value="提交修改"/>
 							        <input class="hidval" value="0" type="hidden"/>
 					      </form>
@@ -103,7 +111,7 @@
 			        <div  class="myInfo"  >		
 						       <h4>地址</h4> <button>打开</button>
 					    <form class="panel" action="#" method="post" id="formId"  style="display: none;">
-					           	 新地址:<input type="text" value="" name="userNameInfo"/>
+					           	 新地址:<input type="text" value="<%=user.getUaddress() %>" name="userNameInfo"/>
 							        <input name="submit" type="submit" value="提交修改"/>
 							       <input class="hidval" value="0" type="hidden"/>
 					      </form>
