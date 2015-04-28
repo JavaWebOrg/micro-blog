@@ -16,9 +16,9 @@ public class TestSql {
 		/*UserDao udao = new UserDao();
 		User user = new User();
 		user.setUid(1);
-		user.setUname("ÍõÎå");
+		user.setUname("ï¿½ï¿½ï¿½ï¿½");
 		user.setUpwd("123456");
-		user.setUsex("ÄÐ");
+		user.setUsex("ï¿½ï¿½");
 		user.setUage(20);
 		user.setUtel("534535");
 		user.setUaddress("djkshfdkshk");
@@ -30,30 +30,33 @@ public class TestSql {
 		}
 		System.out.println("uname = "+user.getUname());
 		System.out.println("upwd = "+user.getUpwd());*/
-		//²âÊÔDynamicInformationDaoÀà
+		//ï¿½ï¿½ï¿½ï¿½DynamicInformationDaoï¿½ï¿½
 		/*DynamicInformation info = new DynamicInformation();
 		DynamicInformationDao infoDao = new DynamicInformationDao();
 		info.setDdate(new java.util.Date().toLocaleString());
-		info.setDcontext("²»´íÅ¶");
+		info.setDcontext("ï¿½ï¿½ï¿½ï¿½Å¶");
 		info.setUid(1);
 		infoDao.InsertInfomation(info);*/
-		//²âÊÔmessageDaoÀà
+		//ï¿½ï¿½ï¿½ï¿½messageDaoï¿½ï¿½
 		/*Message message = new Message();
 		MessageDao messageDao = new MessageDao();
 		message.setLdate(new java.util.Date().toLocaleString());
-		message.setLcontext("ÄãÃÃÑ½£¡");
+		message.setLcontext("ï¿½ï¿½ï¿½ï¿½Ñ½ï¿½ï¿½");
 		message.setUid(1);
 		messageDao.InsertMessage(message);*/
 		
 		
-		//
+		/*//
 		Friend friend = new Friend();
 		FriendDao fdao = new FriendDao();
 		friend.setXuid(1);
 		friend.setYuid(2);
-		friend.setXunane("ÕÅÈý");
-		friend.setYuname("ÀîËÄ");
+		friend.setXunane("ï¿½ï¿½ï¿½ï¿½");
+		friend.setYuname("ï¿½ï¿½ï¿½ï¿½");
 		friend.setUid(2);
-		fdao.InsertFriend(friend);
+		fdao.InsertFriend(friend);*/
+		
+		MessageDao md=new MessageDao();
+//		System.out.println(md.getCount());
 	}
 }

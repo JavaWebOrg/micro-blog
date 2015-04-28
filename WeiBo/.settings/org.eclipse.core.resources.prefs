@@ -1,4 +1,4 @@
-#Mon Apr 27 14:55:25 CST 2015
+#Tue Apr 28 20:44:24 CST 2015
 eclipse.preferences.version=1
 encoding//WebRoot/css/pic.css=UTF-8
 encoding//WebRoot/css/scroll.css=UTF-8
@@ -8,3 +8,4 @@ encoding//src/com/weibo/dao/DynamicInformationDao.java=GBK
 encoding//src/com/weibo/dao/MessageDao.java=GBK
 encoding//src/com/weibo/dao/UserDao.java=GBK
 encoding/<project>=UTF-8
+encoding/dev.txt=GBK

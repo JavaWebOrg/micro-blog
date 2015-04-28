@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
+    
+<%@ page import="com.weibo.dao.*,java.util.*,com.weibo.entity.*;" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -10,53 +12,8 @@
 	<link rel="stylesheet" type="text/css" href="./css/nav.css">
 	<link rel="stylesheet" type="text/css" href="./css/clear.css">
 	<link rel="stylesheet" type="text/css" href="./css/register.css">
-
+	<link rel="stylesheet" type="text/css" href="./css/message.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-<style>
-	.message{
-		width:720px;
-		height:100%;
-		/* border:2px red solid; */
-	}
-	#mLeft{
-		float: left;
-		border:0px red solid;
-		width: 75%;
-		height: 100%;
-		background-color: #efefef;
-	}
-
-	#mRight{
-		float:right;
-		border:0px red solid;
-		width: 20%;
-		height: 100%;
-		background-color: yellow;
-	}
-	.text{
-		width: 80%;
-		float: right;
-		margin-top: 20px;
-	}
-	.liuyan{
-	float:left;font-size:18px;position:relative;left:30px;top:30px;
-	font-family: sans-serif;
-	font-weight: bold;
-	left: 15px;
-	top: 20px;
-	
-	}
-	.show{
-	margin-top:20px; border:2px red solid;width:100%;height:250px;
-	padding:10px 0;
-	overflow:hidden;
-	}
-	.msg{
-	border:2px red solid;
-	margin-left:10px; 
-	}
-	
-</style>
 
 </head>
 <body>
@@ -92,42 +49,56 @@
 	  		<div class="main">
 	  			<div class="message">
 	  				<div id="mLeft">
-	  					<div class="liuyan">留言内容:</div>
-	  					<div class="text">
-	  						<form>
-	  						<textarea rows="10" name="message" id="message" cols="80" style="margin: 0px; width: 425px; height: 180px;">nihao </textarea>	
-	  						<button type="submit" class="button orange medium"> 提交留言</button>
-	  						</form>
-	  					</div>
-	  				<div class="clear"></div>
+		  					<div class="liuyan">留言内容:</div>
+		  					<div class="text">
+		  						<form>
+		  						<textarea rows="10" name="message" id="message" cols="80" style="margin: 0px; width: 425px; height: 180px;">nihao </textarea>	
+		  						<button type="submit" class="button orange medium"> 提交留言</button>
+		  						</form>
+		  					</div>
+	  						<div class="clear"></div>
+		  				
+			  				<div class="show">
+			  				
+				  				<form action="">
+				  				<div class="msg"> 
+				  				<%
+				  					final int number = 5;	// 一页显示 5条记录
+				  					int pageNum = 1; 			// 当前页数
+				  					int pageCount = 1;			// 总页数
+				  					int recordCount = MessageDao.getCount();		// 总记录数
+System.out.println("recordCount="+recordCount);
+				  					// 计算总页数
+				  					pageCount = ( recordCount + number - 1 ) / number;
+				  					// 本页从 startRecord 行开始
+				  					int start= ( pageNum - 1) * number;
+				  					ArrayList<Message> mess=MessageDao.QueryInfo(start,number);
+				  					for(int i=0;i<mess.size();i++){
+				  						Message message=mess.get(i);
+				  						int id=message.getLid();
+System.out.println("id="+id);
+				  						String text=message.getLcontext();
+System.out.println("text="+text);
+				  						String date=message.getLdate();
+System.out.println("id="+id);
+				  				%>
+				  					
+				  						<dl>
+										   	 <dt><%=text %></dt>
+									   		 <dd  style="postion:relative;right:5px;"><%=id %>&nbsp;&nbsp;<%=date %></dd>
+										</dl>
+				  					
+				  				<%
+				  					}
+				  				%>
+				  				</div>
+				  				<a href="#">next  要在点击的时候能够显示下一条数据,还有留言的框架要做完</a>
+				  				</form>	
+				  				
+			  				</div>
+	  				</div>
 	  				
-	  				<div class="show">
-	  					<div class="float msg"> 
-	  						<dl>
-						  	 <dt>取出的数据标题</dt>
-						   	<dd>取出的留言</dd>
-							</dl>
-	  					</div>
-	  					<div class="float msg"> 
-						  	 <dl>
-						  	 <dt>取出的数据标题</dt>
-						   	<dd>取出的留言</dd>
-							</dl>
-	  					</div>
-	  					<div class="float msg"> 
-	  						<dl>
-						  	 <dt>取出的数据标题</dt>
-						   	<dd>取出的留言</dd>
-							</dl>
-	  					</div>
-	  				</div>
-	  					
-
-	  				</div>
-
-
 					<div id="mRight" >
-						
 					</div>
 
 
