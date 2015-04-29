@@ -1,7 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
     
-<%@ page import="com.weibo.dao.*,java.util.*,com.weibo.entity.*;" %>
+<%@ page import="com.weibo.dao.*" %>
+<%@ page import="java.util.*" %>
+<%@ page import="com.weibo.entity.*" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -51,8 +54,8 @@
 	  				<div id="mLeft">
 		  					<div class="liuyan">留言内容:</div>
 		  					<div class="text">
-		  						<form>
-		  						<textarea rows="10" name="message" id="message" cols="80" style="margin: 0px; width: 425px; height: 180px;">nihao </textarea>	
+		  						<form action="MessageServlet" method="post" onsubmit="return isNull()">
+		  							<textarea rows="10" name="message" id="message" cols="80" style="margin: 0px; width: 425px; height: 180px;" > </textarea>	
 		  						<button type="submit" class="button orange medium"> 提交留言</button>
 		  						</form>
 		  					</div>
@@ -76,11 +79,11 @@ System.out.println("recordCount="+recordCount);
 				  					for(int i=0;i<mess.size();i++){
 				  						Message message=mess.get(i);
 				  						int id=message.getLid();
-System.out.println("id="+id);
+//System.out.println("id="+id);
 				  						String text=message.getLcontext();
-System.out.println("text="+text);
+//System.out.println("text="+text);
 				  						String date=message.getLdate();
-System.out.println("id="+id);
+//System.out.println("id="+id);
 				  				%>
 				  					
 				  						<dl>
@@ -116,4 +119,16 @@ System.out.println("id="+id);
 
 	<script type="text/javascript" src="js/jquery-1.4.4.js"></script>
 	<script type="text/javascript" src="js/jqueryme.js"></script>
+	<script type="text/javascript">
+		function isNull(){
+			var text=document.getElementById("message").value;
+			if(""==text){
+				return false;
+			}
+			else{
+				return true;
+			}
+		}
+	</script>
+	
 </html>

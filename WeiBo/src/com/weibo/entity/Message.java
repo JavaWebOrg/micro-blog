@@ -29,5 +29,17 @@ public class Message {
 	public void setUid(int uid) {
 		this.uid = uid;
 	}
+	public Message() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Message(String ldate, String lcontext, int uid) {
+		super();
+		this.ldate = ldate;
+		this.lcontext = lcontext;
+		this.uid = uid;
+	}
+	
+	
 	
 }

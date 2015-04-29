@@ -11,7 +11,7 @@ import com.weibo.jdbc.DbUtil;
 public class MessageDao {
 	static DbUtil dbutil = new DbUtil();
 	//插入动态信息
-	public boolean InsertMessage(Message message){
+	public static boolean InsertMessage(Message message){
 		try {
 			Connection conn = dbutil.GetCon();
 			String sql = "insert into t_message(ldate,lcontext,uid) values(?,?,?)";

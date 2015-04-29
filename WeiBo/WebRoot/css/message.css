@@ -1,0 +1,56 @@
+@charset utf-8;
+	.message{
+		width:720px;
+		height:100%;
+		/* border:2px red solid; */
+	}
+	#mLeft{
+		float: left;
+		border:0px red solid;
+		width: 75%;
+		height: 100%;
+		background-color: #efefef;
+	}
+
+	#mRight{
+		float:right;
+		border:0px red solid;
+		width: 20%;
+		height: 100%;
+		background-color: yellow;
+	}
+	.text{
+		width: 80%;
+		float: right;
+		margin-top: 20px;
+	}
+	.liuyan{
+	float:left;font-size:18px;position:relative;left:30px;top:30px;
+	font-family: sans-serif;
+	font-weight: bold;
+	left: 15px;
+	top: 20px;
+	
+	}
+	.show{
+	margin-top:20px; width:100%;height:100%;
+	overflow:hidden;
+	}
+	.msg{
+		width:100%;
+		height:100%;
+		margin-top:25px; 
+	}
+	dl{
+		border:1px red solid;
+		margin-bottom: 10px;
+	}
+	dt{
+		text-align:left;
+	}
+	dd{
+		text-align: right;
+	}
+	
+	
+	
