@@ -34,7 +34,13 @@ public class RegisterServlet extends HttpServlet {
 		user.setUtel(tel);
 		user.setUaddress(address);
 		UserDao userdao = new UserDao();
-		boolean isInsert = userdao.Insert(user);
+		boolean isInsert = false;
+		try {
+			isInsert = userdao.Insert(user);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		if(isInsert == true){
 			request.getRequestDispatcher("index.html").forward(request, response);
 		}else {

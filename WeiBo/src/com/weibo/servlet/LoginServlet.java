@@ -27,9 +27,15 @@ public class LoginServlet extends HttpServlet {
 		response.setContentType("text/html;charset = utf-8");
 		String name = request.getParameter("userName");
 		String password = request.getParameter("pwd");
+		//System.out.println("name = "+name+" password = "+password);
 		UserDao userDao = new UserDao();
 		User user = new User();
-		user = userDao.SearchUser(name, "uname");
+		try {
+			user = userDao.SearchUser(name, "uname");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		//System.out.println("upwd = "+user.getUpwd());
 		if(user!=null&&user.getUpwd().equals(password)){
 			HttpSession session = request.getSession();

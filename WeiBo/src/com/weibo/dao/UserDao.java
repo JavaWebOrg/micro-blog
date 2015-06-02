@@ -4,95 +4,58 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import com.weibo.entity.User;
 import com.weibo.jdbc.DbUtil;
 
-public class UserDao {
-	DbUtil dbutil = new DbUtil();
-	
-	//插入一条数据
-	public boolean Insert(User user) {
-		Connection conn;
-		try {
-			conn = dbutil.GetCon();
+public class UserDao extends BaseDao{
+	/**
+	 * 
+	 * @param user
+	 * @return
+	 * @throws Exception 
+	 */
+	public boolean Insert(User user) throws Exception {
 			String sql ="insert into t_user(uname,upwd,usex,uage,utel,uaddress)" +
 					"values(?,?,?,?,?,?)";
-			PreparedStatement pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, user.getUname());
-			pstmt.setString(2, user.getUpwd());
-			pstmt.setString(3, user.getUsex());
-			pstmt.setInt(4, user.getUage());
-			pstmt.setString(5, user.getUtel());
-			pstmt.setString(6, user.getUaddress());
-			pstmt.executeUpdate();
-			pstmt.close();
-			conn.close();
-			return true;
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return false;
+			int result = update(sql, User.class, user.getUname(),user.getUpwd(),user.getUsex(),user.getUage(),
+					user.getUtel(),user.getUaddress());
+			if(result!=-1){
+				return true;
+			}else {
+				return false;
+			}
 	}
 	
-	//搜索
-	public User SearchUser(String value,String action) {
-		try {
-			Connection conn = dbutil.GetCon();
+	/**
+	 * 
+	 * @param value
+	 * @param action
+	 * @return
+	 */
+	public User SearchUser(String value,String action) throws Exception{
 			String sql = "select * from t_user where "+action+" = ?";
-			PreparedStatement pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1,value);
-			ResultSet rs =pstmt.executeQuery();
-			User curUser = null;
-			if(rs.next()){
-				curUser = new User();
-				curUser.setUid(rs.getInt("uid"));
-				curUser.setUname(rs.getString("uname"));
-				curUser.setUpwd(rs.getString("upwd"));
-				curUser.setUage(rs.getInt("uage"));
-				curUser.setUtel(rs.getString("utel"));
-				curUser.setUaddress(rs.getString("uaddress"));
-				curUser.setUsex(rs.getString("usex"));
-			}
-			rs.close();
-			pstmt.close();
-			conn.close();
-			return curUser;
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return null;
+			System.out.println("action = "+action +" value = "+value);
+		    ArrayList<User> list = new ArrayList<User>();
+		    list = (ArrayList<User>)queryToList(sql, User.class, value);
+		    return (User)list.get(0);
 	}
-	//更新
-	public boolean UpdateUser(User user){
-		try {
-			Connection conn = dbutil.GetCon();
+	/**
+	 * 
+	 * @param user
+	 * @return
+	 * @throws Exception 
+	 */
+	public boolean UpdateUser(User user) throws Exception{
 			String sql = "update t_user set uname = ?,upwd = ?,usex=?," +
 					"uage=?,utel=?,uaddress=? where uid = ?";
-			PreparedStatement pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1,user.getUname());
-			pstmt.setString(2,user.getUpwd());
-			pstmt.setString(3,user.getUsex());
-			pstmt.setInt(4,user.getUage());
-			pstmt.setString(5,user.getUtel());
-			pstmt.setString(6,user.getUaddress());
-			pstmt.setInt(7,user.getUid());
-			pstmt.executeUpdate();
-			pstmt.close();
-			conn.close();
-			return true;
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return false;
+			int result = update(sql, User.class,user.getUname(),user.getUpwd(),user.getUsex(),
+					user.getUage(),user.getUtel(),user.getUaddress(),user.getUid());
+			if(result != -1){
+				return true;
+			}else {
+				return false;
+			}
 	}
 }

@@ -6,12 +6,12 @@ import java.sql.SQLException;
 
 @SuppressWarnings("unused")
 public class DbUtil {
-	private String jdbcName = "com.mysql.jdbc.Driver";
-	private String username = "root";
-	private String password = "123456";
-	private String dbUrl = "jdbc:mysql://localhost:3306/weibo?useUnicode=true&characterEncoding=UTF-8";
-	public Connection GetCon() throws Exception{
-		Class.forName(jdbcName);//¼ÓÔØÇý¶¯
+	private static String jdbcName = "com.mysql.jdbc.Driver";
+	private static String username = "root";
+	private static String password = "123456";
+	private static String dbUrl = "jdbc:mysql://localhost:3306/weibo?useUnicode=true&characterEncoding=UTF-8";
+	public static Connection GetCon() throws Exception{
+		Class.forName(jdbcName);//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		Connection conn = DriverManager.getConnection(dbUrl, username, password);
 		return conn;
 	}
@@ -24,7 +24,7 @@ public class DbUtil {
 		DbUtil util = new DbUtil();
 		Connection con = util.GetCon();
 		if(con!=null){
-			System.out.println("Á¬½Ó³É¹¦£¡");
+			System.out.println("ï¿½ï¿½ï¿½Ó³É¹ï¿½ï¿½ï¿½");
 			util.CloseCon(con);
 		}
 	}*/

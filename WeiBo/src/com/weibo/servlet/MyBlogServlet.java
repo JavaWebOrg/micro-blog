@@ -36,9 +36,21 @@ public class MyBlogServlet extends HttpServlet {
 		dInfor.setDdate(date);
 		dInfor.setDcontext(info);
 		DynamicInformationDao ddao = new DynamicInformationDao();
-		boolean isInsert = ddao.InsertInfomation(dInfor);
+		boolean isInsert = false;
+		try {
+			isInsert = ddao.InsertInfomation(dInfor);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		if(isInsert == true){
-			ArrayList<DynamicInformation> list = ddao.QueryInfor(uid);
+			ArrayList<DynamicInformation> list = null;
+			try {
+				list = ddao.QueryInfor(uid);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			session.setAttribute("dlist", list);
 			request.getRequestDispatcher("myBlog.jsp").forward(request, response);
 			

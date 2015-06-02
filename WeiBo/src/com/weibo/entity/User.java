@@ -1,16 +1,13 @@
 package com.weibo.entity;
 
 public class User {
-	private int uid;//ÓÃ»§±àºÅ
-	private String uname;//ÓÃ»§ĞÕÃû
-	private String upwd;//ÓÃ»§ÃÜÂë
-	private String usex;//ÓÃ»§ĞÔ±ğ
-	private int  uage;//ÓÃ»§ÄêÁä
-	private String utel;//ÓÃ»§µç»°
-	private String uaddress;//ÓÃ»§µØÖ·
-	private int did;//¶¯Ì¬id,Íâ¼ü
-	private int lid;//ÁôÑÔid,Íâ¼ü
-	private int hid;//ºÃÓÑid,Íâ¼ü
+	private int uid;//ï¿½Ã»ï¿½ï¿½ï¿½ï¿½
+	private String uname;//ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½
+	private String upwd;//ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½
+	private String usex;//ï¿½Ã»ï¿½ï¿½Ô±ï¿½
+	private int  uage;//ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½
+	private String utel;//ï¿½Ã»ï¿½ï¿½ç»°
+	private String uaddress;//ï¿½Ã»ï¿½ï¿½ï¿½Ö·
 	public int getUid() {
 		return uid;
 	}
@@ -53,24 +50,5 @@ public class User {
 	public void setUaddress(String uaddress) {
 		this.uaddress = uaddress;
 	}
-	public int getDid() {
-		return did;
-	}
-	public void setDid(int did) {
-		this.did = did;
-	}
-	public int getLid() {
-		return lid;
-	}
-	public void setLid(int lid) {
-		this.lid = lid;
-	}
-	public int getHid() {
-		return hid;
-	}
-	public void setHid(int hid) {
-		this.hid = hid;
-	}
-	
 	
 }
